@@ -1,10 +1,12 @@
 package org.launchcode.studio7;
 
-public class CD {
+public class CD extends BaseDisc {
 
-    // TODO: Implement your custom interface.
 
-    // TODO: Determine which fields, methods, and constructors can be extended from the base class and which ones
-    //  need to be declared separately.
-
+    public CD(String name, int data) {
+        super(name, data);
+        this.discType = "CD";
+        this.spinSpeed = 500;
+        this.storageCapacity = 700;
+    }
 }
